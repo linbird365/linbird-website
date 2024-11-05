@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linbird Learning English (App, YouTube)</title>
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XYMKFJJCP"></script>
     <script>
@@ -15,10 +15,13 @@
     </script>
     <!-- End Google Analytics -->
 
-    <!-- SEO Readme -->
-    <meta name="description" content="Unlock the power of English with Linbird Learning English! Dive into our unique learning experience featuring four vivid images per vocabulary word, crystal-clear American and British pronunciations, and innovative memory tricks to help you retain every new term. Broaden your horizons, master authentic accents, and excel globally with Linbird Learning English. Start your journey to fluency today with our Android and iOS apps, and explore our YouTube channel for more. Linbird Learning English is powered by Arrowmark.">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <style>
+        /* Background with blue-purple gradient */
         body {
             display: flex;
             justify-content: center;
@@ -26,69 +29,104 @@
             flex-direction: column;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #2E3A87, #6A2C70);
             font-family: 'Arial', sans-serif;
+            color: #fff;
         }
+
+        /* Center Container Styling */
         .container {
             text-align: center;
-            background: #fff;
+            background: rgba(20, 20, 20, 0.8); /* Semi-transparent dark background */
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
+            width: 90%;
+            max-width: 500px;
         }
+
         .logo {
-            width: 100px;
+            width: 80px;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 8px;
         }
+
         .container h1 {
             margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
+            font-size: 26px;
+            color: #4A98E5;
         }
+
+        /* Button Styling */
         .button {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 16px;
             color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
+            background: linear-gradient(145deg, #007bff, #0056b3);
+            border: 2px solid #fff; /* White outline */
+            border-radius: 50px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
         }
+
         .button:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
         }
+
         .button-ios {
-            background-color: #28a745;
+            background: linear-gradient(145deg, #28a745, #1c7430);
         }
+
         .button-ios:hover {
             background-color: #1c7430;
         }
+
+        /* Text Section Styling */
         .readme {
             text-align: center;
-            background: #fff;
+            background: rgba(20, 20, 20, 0.8);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             max-width: 600px;
             font-size: 16px;
-            color: #333;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Link Styling in the Readme */
+        .readme a {
+            color: #4A98E5;
+            text-decoration: none;
+        }
+
+        .readme a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <!-- Main Container -->
     <div class="container">
         <img src="logo.png" alt="Linbird Logo" class="logo">
         <h1>Download Our App</h1>
-        <a href="https://play.google.com/store/apps/details?id=com.linbird.learnenglish" class="button">Google Play Store</a>
-        <a href="https://apps.apple.com/app/idyourappid" class="button button-ios">iOS App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.linbird.learnenglish" class="button"><i class="fab fa-google-play"></i> Google Play Store</a>
+        <a href="https://apps.apple.com/app/idyourappid" class="button button-ios"><i class="fab fa-apple"></i> iOS App Store</a>
     </div>
+
+    <!-- Description Section -->
     <div class="readme">
         Unlock the power of English with Linbird Learning English! Dive into our unique learning experience featuring four vivid images per vocabulary word, crystal-clear American and British pronunciations, and innovative memory tricks to help you retain every new term. Broaden your horizons, master authentic accents, and excel globally with Linbird Learning English. Start your journey to fluency today with our Android and iOS apps, and explore our YouTube channel for more. Linbird Learning English is powered by Arrowmark.
     </div>
+
+    <!-- Bootstrap and Font Awesome Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
